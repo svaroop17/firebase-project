@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   nitro: {
-    preset: 'node-server'
+    preset: 'github_pages'
   }
 })
