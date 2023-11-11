@@ -1,10 +1,11 @@
 {
-  "hosting": {
-    "public": ".output/public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+  "functions": { "source": ".output/server" },
+  "hosting": [
+    {
+      "site": "https://my-project-1524488415186.web.app/",
+      "public": ".output/public",
+      "cleanUrls": true,
+      "rewrites": [{ "source": "**", "function": "server" }]
+    }
+  ]
 }
